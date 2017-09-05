@@ -46,8 +46,8 @@ int main() {
         scanf("%d",&p);
         ac_points.push_back(p);
     }
-    if (k >= 16){
-        //遗传算法+floyed近似
+    if (k >= 10){
+//  if (k >= 16){        //遗传算法+floyed近似
         ans = Genetic(ac_points,path,100,500,50,1);
     }else{
         //floyed+动态规划最优
