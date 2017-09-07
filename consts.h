@@ -5,7 +5,8 @@
 #ifndef PATHFIND_CONSTS_H
 #define PATHFIND_CONSTS_H
 
-const int MAXV = 30;
+const int MAXV = 300;
+const int MAXK = 17;
 const int MAXE = MAXV*MAXV;
 const double INF = 1e10;
 const double EPS = 1e-10;

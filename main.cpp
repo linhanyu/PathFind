@@ -8,6 +8,8 @@
 using namespace std;
 
 #include "Floyed.h"
+#include "consts.h"
+
 using namespace std;
 
 int main() {
@@ -46,7 +48,7 @@ int main() {
         scanf("%d",&p);
         ac_points.push_back(p);
     }
-    if (k >= 10){
+    if (k >= MAXK-2){
 //  if (k >= 16){        //遗传算法+floyed近似
         ans = Genetic(ac_points,path,100,500,50,1);
     }else{
@@ -59,7 +61,7 @@ int main() {
         printf("%d ",path[i]);
 
 //    测试部分
-
+//
 //    puts("算法2");
 //    clock_t a = clock();
 //    ans = dpfloyed(ac_points,path);

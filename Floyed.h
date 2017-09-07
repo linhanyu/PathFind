@@ -6,10 +6,10 @@
 #define PATHFIND_FLOYED_H
 
 #include <vector>
+#include "consts.h"
 using namespace std;
 
-const int INF = 0x3f3f3f3f;
-const int MAXV = 300;
+
 
 extern double dp[MAXV][MAXV];
 extern int path[MAXV][MAXV] ;

@@ -2,7 +2,7 @@
 // Created by Henry lin on 2017/9/2.
 //
 #include "Floyed.h"
-
+#include "consts.h"
 #include <random>
 #include <vector>
 #include <algorithm>
@@ -14,8 +14,8 @@ using namespace std;
 
 double dp[MAXV][MAXV] ;
 int path[MAXV][MAXV] ;
-double dpf[MAXV][1<<13];
-int fpath[MAXV][1<<13];
+double dpf[MAXV][1<<MAXK];
+int fpath[MAXV][1<<MAXK];
 
 
 void init(int n){
